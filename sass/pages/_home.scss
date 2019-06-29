@@ -1,0 +1,18 @@
+.section-about {
+    position: relative;
+    background-color: $color-grey-light-1;
+    padding: 40rem 0;
+    margin-top: -20vh; // 95vh - 75vh = 20vh (-20vh means we move up by 20vh)
+}
+
+.section-features {
+    padding: 20rem 0rem;
+    @include gradient-background(url(/img/nat-4.jpg));
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * { // direct children. for reusability and maintainability purposes, we define this stuff here
+        transform: skewY(7deg);
+    }
+
+}

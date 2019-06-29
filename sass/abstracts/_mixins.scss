@@ -1,0 +1,16 @@
+// Arguments to be passed: NONE
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+// Arguments to be passed: $url: Specify URl of the image (eg: url(..img/something.jpg))
+
+@mixin gradient-background($url) {
+    background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), $url;
+    background-size: cover;
+}
