@@ -5,6 +5,7 @@
     @include gradient-background(url(/img/hero.jpg));
     background-position: top; /* The top of the image always stays at the top */
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
 

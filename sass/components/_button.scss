@@ -6,7 +6,6 @@
         text-decoration: none;
         padding: 1.5rem 4rem;
         border-radius: 10rem;
-        color: $color-grey-dark;
 
         position: relative;
         font-size: 1.6rem; 
@@ -47,7 +46,21 @@
         animation-fill-mode: backwards; /* 'backwards' applies the style (before animation) assigned to 0% of the animation */
     }
 
-    &--white { background-color: $color-white; &::after { background-color: $color-white; } }
+    &--white { 
+        background-color: $color-white;
+        color: $color-grey-dark;
+        &::after { 
+            background-color: $color-white; 
+        } 
+    }
+
+    &--green { 
+        background-color: $color-primary;
+        color: $color-white;
+        &::after { 
+            background-color: $color-primary; 
+        } 
+    }
 
     &--text:visited,
     &--text:link {
