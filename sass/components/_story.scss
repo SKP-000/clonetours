@@ -1,0 +1,60 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    padding: 6rem;
+    padding-left: 9rem;
+    background-color: rgba($color-white, .6);
+    font-size: $default-font-size;
+    box-shadow: 0rem 3rem 6rem rgba($color-black, .1);
+    border-radius: 3px;
+    transform: skewX(-12deg);
+
+    &__shape {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        overflow: hidden;
+        -webkit-shape-outside: circle(50% at 50% 50%); // safari support
+        shape-outside: circle(50% at 50% 50%); // circle radius is the first value here.
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); // clips it to an actual circle
+        transform: translateX(-3rem) skewX(12deg); // here we cannot do the direct child selector because even if we did that this transform property would take precedence over the transform specified with the direct child selector
+    }
+
+    &__img {
+        height: 100%; // 100% of the parent figure element
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .8s;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        font-size: $default-font-size;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-white;
+        backface-visibility: hidden;
+
+        transition: all .8s;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        filter: blur(2px) brightness(80%);
+        transform: scale(1) translateX(-4rem);
+    }
+
+}
