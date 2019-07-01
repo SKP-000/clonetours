@@ -37,14 +37,19 @@
     }
 
     &__link {
-        display: inline-block;
-        text-decoration: none;
-        color: $color-white;
-        padding: .5rem 1rem;
-        text-transform: uppercase;
-        transition: all .2s;
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-white;
+            padding: .5rem 1rem;
+            text-transform: uppercase;
+            transition: all .2s;
+        }
 
-        &:hover {
+
+        &:hover,
+        &:active {
             background-color: $color-black;
             box-shadow: 0rem 2rem 4rem rgba($color-black, .15);
             color: $color-primary;
