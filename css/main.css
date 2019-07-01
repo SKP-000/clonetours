@@ -936,7 +936,7 @@ body {
 .footer__logo-box {
   position: absolute;
   top: 10%;
-  left: 47%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
