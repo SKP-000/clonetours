@@ -46,6 +46,7 @@
 
         &:hover {
             background-color: $color-black;
+            box-shadow: 0rem 2rem 4rem rgba($color-black, .15);
             color: $color-primary;
             transform: skewY(-3deg) skewX(3deg) scale(1.1);
         }

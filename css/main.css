@@ -982,6 +982,8 @@ body {
 
 .footer__link:hover {
   background-color: #000;
+  -webkit-box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.15);
   color: #55c57a;
   -webkit-transform: skewY(-3deg) skewX(3deg) scale(1.1);
           transform: skewY(-3deg) skewX(3deg) scale(1.1);
