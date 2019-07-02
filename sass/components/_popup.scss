@@ -40,7 +40,7 @@
     }
 
     &__content {
-        @include absolute-center(scale(.1));
+        @include absolute-center(scale(.5));
         display: table; // for table cells to work, parent's display property must be set to table obviously
         background-color: $color-white;
         width: 75%;
