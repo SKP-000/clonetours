@@ -14,3 +14,10 @@
     background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), $url;
     background-size: cover;
 }
+
+@mixin absolute-center($transforms-extra) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) $transforms-extra;
+}
