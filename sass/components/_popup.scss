@@ -19,6 +19,26 @@
         transform: translate(-50%, -50%) scale(1);
     }
 
+    &__close {
+
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1;
+            transition: all .2s;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
     &__content {
         @include absolute-center(scale(.1));
         display: table; // for table cells to work, parent's display property must be set to table obviously
