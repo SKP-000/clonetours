@@ -188,6 +188,7 @@ body {
 
 .heading-secondary {
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-transition: all .2s;
   transition: all .2s;
   display: inline-block;
@@ -245,7 +246,7 @@ body {
 }
 
 .u-margin-top-huge {
-  margin-top: 8rem !important;
+  margin-top: 10rem !important;
 }
 
 .section-about {
@@ -475,6 +476,7 @@ body {
 .feature-box__icon {
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   font-size: 6rem;
   margin-bottom: .5rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
