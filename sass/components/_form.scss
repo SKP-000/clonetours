@@ -17,6 +17,11 @@
         background-color: $color-white;
         border: none;
         width: 90%;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        
         border-bottom: 3px solid transparent;
 
         transition: all .3s;
@@ -57,8 +62,17 @@
         position: relative;
         margin-bottom: 2rem;
 
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2.9rem;
+        }
+
         &:not(:first-child) {
             margin-left: 5rem;
+
+            @include respond(tab-port) {
+                margin-left: 0;
+            }
         }
     }
 

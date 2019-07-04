@@ -8,13 +8,22 @@
 
     transition: transform .3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &__icon {
         display: inline-block;
         -webkit-background-clip: text;
+        background-clip: text;
         font-size: 6rem;
         margin-bottom: .5rem;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         color: $color-primary-light;
+
+        @include respond(tab-port) {
+            margin: 0;
+        }
     }
 
     &:hover {

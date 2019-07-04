@@ -9,6 +9,17 @@
     border-radius: 3px;
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+        width: 100%;
+
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+
     &__shape {
         position: relative;
         width: 15rem;
@@ -20,6 +31,10 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%); // clips it to an actual circle
         transform: translateX(-3rem) skewX(12deg); // here we cannot do the direct child selector because even if we did that this transform property would take precedence over the transform specified with the direct child selector
+
+        @include respond(phone) {
+            transform: translate(-3rem) skewX(0);
+        }
     }
 
     &__img {
@@ -30,6 +45,10 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {
