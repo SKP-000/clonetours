@@ -4,8 +4,12 @@
     padding: 20rem 0;
     padding-bottom: 30rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         padding: 20rem 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 20rem 0rem;
     }
 
     margin-top: -20vh; // 95vh - 75vh = 20vh (-20vh means we move up by 20vh)
