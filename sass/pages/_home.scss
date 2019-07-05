@@ -13,6 +13,7 @@
 
 .section-features {
     padding: 20rem 0rem;
+
     @include respond(tab-port) {
         padding: 10rem 0;
     }

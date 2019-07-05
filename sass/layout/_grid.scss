@@ -2,6 +2,11 @@
     max-width: $grid-width; // max width
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        max-width: 200rem;
+        padding: 0rem 3rem;
+    }
+
     @include respond(tab-port) {
         max-width: 50rem;
         padding: 0rem 3rem;
@@ -21,8 +26,16 @@
     [class^="col-"] {
         float: left;
 
+        @include respond(tab-land) {
+            margin-left: 3rem;
+        }
+
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-land) {
+                margin-right: 0rem;
+            }
 
             @include respond(tab-port) {
                 margin-right: 0;

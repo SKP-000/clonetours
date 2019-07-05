@@ -56,6 +56,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 3rem;
+  overflow-x: hidden;
 }
 
 @media (max-width: 56.25em) {
@@ -655,7 +656,7 @@ body {
 
 @media (max-width: 56.25em) {
   .feature-box {
-    padding: 2rem;
+    padding: 2.5rem 2rem 5rem 2rem;
   }
 }
 
@@ -1316,6 +1317,13 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 75em) {
+  .row {
+    max-width: 200rem;
+    padding: 0rem 3rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   .row {
     max-width: 50rem;
@@ -1343,8 +1351,20 @@ body {
   float: left;
 }
 
+@media (max-width: 75em) {
+  .row [class^="col-"] {
+    margin-left: 3rem;
+  }
+}
+
 .row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
+}
+
+@media (max-width: 75em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0rem;
+  }
 }
 
 @media (max-width: 56.25em) {
