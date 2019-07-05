@@ -1353,7 +1353,7 @@ body {
 
 @media (max-width: 75em) {
   .row [class^="col-"] {
-    margin-left: 3rem;
+    margin-left: 3.5rem;
   }
 }
 
