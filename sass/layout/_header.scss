@@ -2,11 +2,16 @@
     position: relative;
     z-index: 1;
     height: 95vh;
-    @include gradient-background(url(/img/hero.jpg));
+    @include gradient-background(url(/img/hero-small.jpg));
     background-position: top; /* The top of the image always stays at the top */
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em) {
+        @include gradient-background(url(/img/hero.jpg))
+    }
 
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
